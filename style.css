@@ -1,0 +1,419 @@
+/* Navbar styling */
+.navbar {
+    margin-bottom: 50px;
+}
+
+.logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Home Section Background */
+.home-section {
+    height: 100vh;
+    background: url('result.webp') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-section h1 {
+    font-size: 4rem;
+    color: #fff;
+}
+
+.home-section h2{
+    font-size: 4.5rem;
+}
+.home-section p {
+    font-size: 1.5rem;
+    color: #ddd;
+}
+
+@media (max-width: 768px) {
+    /* Home Section */
+    #home .home-section {
+        padding: 50px 20px; /* Adjust padding for smaller screens */
+    }
+
+    #home h1, #home h2, #home p {
+        text-align: center; /* Center-align text for mobile view */
+    }
+
+    #home h2 {
+        font-size: 30px; /* Reduce font size for mobile */
+    }
+
+    #home p {
+        font-size: 16px; /* Adjust font size for mobile */
+    }
+}
+
+.icon-container {
+    width: 70px;
+    height: 70px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icon {
+    font-size: 28px;
+    transition: color 0.3s;
+}
+
+/* Hover Effect for Icons */
+.icon-container:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+
+.social-icon:hover {
+    color: #000;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #FF6600;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 10px; /* Adjust spacing from the left */
+}
+
+/* Hover Effect for Button */
+.hire-me-btn:hover {
+    background-color: #FF4500;
+    transform: scale(1.05);
+}
+
+/* Section Headings */
+section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* About Section CSS */
+#about {
+    padding: 50px 0;
+    background-color: #000;
+    color: #fff;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#about hr {
+    margin: 10px auto 20px;
+    background-color: #fff;
+    border: none;
+}
+
+#about img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#about .nav-tabs {
+    justify-content: center;
+    border-bottom: 2px solid #333;
+}
+
+#about .nav-tabs .nav-link {
+    color: #fff;
+    border: none;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#about .nav-tabs .nav-link:hover,
+#about .nav-tabs .nav-link.active {
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#about .tab-content {
+    background-color: #222;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ddd;
+}
+
+#about h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#about p {
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+#about .nav-tabs .nav-link.active {
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #about .d-flex {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align for mobile */
+    }
+
+    #about img {
+        margin-bottom: 20px;
+        width: 100px; /* Smaller image size for mobile */
+        height: auto;
+    }
+
+    #about .nav-tabs .nav-link {
+        margin: 5px 0;
+    }
+}
+
+/* Tab Links Styling */
+.tab-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.tab-link:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+/* Active Tab Link */
+.tab-link.active {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+}
+
+/* Tab Content Styling */
+.tab-content {
+    margin-top: 20px;
+    display: none; /* Hide all content by default */
+}
+
+.tab-content.active {
+    display: block; /* Display active tab content */
+}
+
+h5{
+    color: greenyellow;
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 14px;
+}
+
+/* CV Download Button Style */
+.btn-cv-download {
+    background-color: #007bff; /* Blue color for the button */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make the text bold */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.btn-cv-download:hover {
+    background-color: #0056b3; /* Darker blue when hovering */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.btn-cv-download:active {
+    background-color: #004085; /* Even darker blue on click */
+}
+
+.service-box {
+    background: #ffffff;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+/* Service Section */
+#service {
+    background-color: #000;
+    color: #fff;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#service .service-box {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#service .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+#service .service-box i {
+    margin-bottom: 15px;
+}
+
+#service h4 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#service p {
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+.text-warning {
+    color: #ffc107 !important;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-info {
+    color: #17a2b8 !important;
+}
+
+.text-secondary {
+    color: #6c757d !important;
+}
+
+@media (max-width: 767px) {
+    #service .service-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Review Section */
+.review-img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.review-section {
+    color: white;
+}
+
+
+
+/* Contact form styling */
+#contact .form-group {
+    margin-bottom: 15px;
+}
+
+#contact button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .home-section h1 {
+        font-size: 2.5rem;
+    }
+    .home-section p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Footer Section CSS */
+footer {
+    background-color: orangered;
+    color: white;
+}
+
+footer h5 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+footer p,
+footer ul {
+    font-size: 0.9rem;
+}
+
+footer ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: yellow;
+}
+
+/* Social Media Icons */
+footer .fab {
+    font-size: 2rem; /* Bigger icon size */
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0 10px;
+}
+
+footer .fab:hover {
+    transform: scale(1.2); /* Hover zoom effect */
+    color: yellow;
+}
+
+footer .text-center a {
+    text-decoration: none;
+    color: white;
+}
